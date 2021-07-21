@@ -503,6 +503,7 @@ footer ul
     {
         margin-top:0;
         margin-left: 15px;
+        margin-bottom:20px;
     }
     #section1
     {
@@ -589,9 +590,9 @@ footer ul
     }
     #cadreactivite .photo img
     {
-        height: 240px;
+        height: 250px;
         overflow: hidden;
-        /* border: #8b1e82 5px solid; */
+
     }
     #cadreactivite .photo h2
     {
@@ -607,6 +608,10 @@ footer ul
     #cadreactivite .photo:nth-child(3n+1)
     {
         height:300px;
+    }
+    #cadreactivite .photo:nth-child(3n+1) img 
+    {
+        height: 250px;
     }
     #cadreactivite .photo .descriptions
     {
