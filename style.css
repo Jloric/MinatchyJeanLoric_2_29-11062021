@@ -501,6 +501,8 @@ footer ul
     }
     #filtre h2
     {
+        width:100%;
+        justify-content:start;
         margin-top:0;
         margin-left: 15px;
         margin-bottom:20px;
