@@ -130,6 +130,8 @@ input,value
     height: 100%;
     width:100px;
     align-items: center;
+    padding-top:5px;
+    font-weight: bold;
 }
 #recherche i
 {
@@ -413,19 +415,32 @@ footer ul
         padding-top: 10px;
         font-size:1.5em;
     }
-  
-    .ligne 
+    #nav
     {
+        width: 106%;
+        /* border: 1px solid red; */
+        margin-left: -20px;
+    }
+    .navigation .ligne 
+    {
+
         width: 50%;
         border-bottom: 2px solid #f2f2f2;
         text-align: center;
         margin-top: 5px;
     }
+    .ligne:hover
+    {
+        border-bottom: 2px solid #0065fc;
+    }
     
-    .ligne a:focus
+    .ligne a:hover
     {  
         border-top: none;
-        border-bottom: 2px solid #0065fc;
+    }
+    .ligne:nth-child(2)
+    {
+        margin-right: -40px;
     }
 
     #inscription 
@@ -444,7 +459,7 @@ footer ul
        margin-left:  -12px;
        margin-top:10px;
        padding-bottom: 3px;
-       width: 411px;
+       width: 101%;
        height:80px;
        
     }
@@ -464,7 +479,7 @@ footer ul
         border-radius:18px;
         width: 75px;
     }
-    #recherche h2
+    #recherche span
     {
         display: none;
     }
