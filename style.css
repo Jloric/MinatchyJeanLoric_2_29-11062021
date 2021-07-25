@@ -175,7 +175,6 @@ input,value
     background: #deebff;
     padding:12px;
     border-radius: 50%;
-    border: solid 1px #deebff ;
     margin-right:5px;
 }
 
@@ -735,7 +734,7 @@ footer ul
     }
     #cadreactivite a:nth-child(3n+1) img 
     {
-        max-height: auto;
+        
         height: auto;
     }
     #cadreactivite .photo .descriptions
