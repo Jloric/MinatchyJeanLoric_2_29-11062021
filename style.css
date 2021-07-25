@@ -18,9 +18,13 @@ body
 }
 h1
 {
-    font-size: 0.9em ;
+    font-size: 1em;
 }
 h2
+{
+    font-size: 0.9em ;
+}
+h3
 {
     font-size:0.8em;
     font-weight:bold;
@@ -42,11 +46,6 @@ header
    justify-content:space-between;
    align-items:center;
    flex-wrap: wrap;
-}
-.navigation li:nth-child(2)
-{
-    color:grey;
-    /* border: 2px solid #813c3c; */
 }
 #grey 
 {
@@ -78,7 +77,6 @@ header
 #inscription
 {
     font-weight: bold;
-    /* color:#0065fc; */
 }
 
 #selection
@@ -233,7 +231,6 @@ input,value
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: -30px;
-    /* border: 1px solid red; */
 }
 
 #cadrehebergement .photo
@@ -248,17 +245,16 @@ input,value
     flex-direction: column;
     align-items: flex-start;
     box-shadow:2px 2px rgb(231, 230, 230) ;
-    /* border:#0065fc 1px solid; */
 }
 
 #cadrehebergement .photo img
 {
-    height:65%;
+    min-height: 130px;
+    height:auto;
     width: 100%;
-    /* margin:3px 3px 0  3px; */
     border-radius: 18px 18px 0 0 ;
 }
-.photo .descriptions
+#cadrehebergement .descriptions
 {
     height:70px;
     margin:0 0 0 10px;
@@ -317,14 +313,16 @@ input,value
 
 #cadrepopulaire .photo img
 {
-    width:40%;
+    min-width:40%;
+    width: auto;
     height:150px;
     margin: 3px 3px;
     border-radius: 18px 0 0 18px;
 }
 #cadrepopulaire .photo .descriptions
 {
-    width:60%;
+    min-width:60%;
+    width:auto;
     line-height:1.2em;
 }
 #cadrepopulaire .iconebleu
@@ -338,7 +336,8 @@ input,value
 #section3
 {
     width:100%;
-    height:445px ;
+    height:auto;
+    margin-bottom: 30px;
 
 }
 #section3 a
@@ -357,14 +356,14 @@ input,value
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    height:400px;
+    height:470px;
     margin-top: 30px;
 }
 
 #cadreactivite .photo
 {
     width:100%;
-    height:180px;
+    height:auto;
     border-radius:30px;
     display: flex;
     flex-direction: column;
@@ -379,29 +378,27 @@ input,value
 }
 #cadreactivite .photo img
 {
-    height: 145px;;
+    height: auto;
+    max-height:180px;
     width: 100%;
 }
 #cadreactivite .photo .descriptions
 {
-    height:20px;
+    min-height:40px;
     padding-left: 5px;
     align-items: center;
 }
 #cadreactivite a:nth-child(3n+1) .photo
 {
 
-    height:380px;
-    overflow:hidden;
+    height:auto;
      
 }
 #cadreactivite a:nth-child(3n+1) img
 {
-        height:345px; 
-    
+    height:auto;
+    min-height:420px;  
 }
-
-
 footer
 {
     display: flex;
@@ -441,19 +438,23 @@ footer ul
         width:95%;
         margin:auto;
     }
-    h1
+    h1 
+    {
+        font-size:2.2em;
+    }
+    h2
     {
         font-size:2em;
         flex-wrap: wrap;
         margin-left: 15px;
     }
-    h2
+    h3
     {
-        font-size: 1.9em;
+        font-size: 1.2em;
     } 
     p
     {
-        font-size: 1.5em;
+        font-size: 1.1em;
         margin-left: 15px;
     }
     header 
@@ -467,7 +468,6 @@ footer ul
     #nav
     {
         width: 106%;
-        /* border: 1px solid red; */
         margin-left: -20px;
     }
     .navigation .ligne 
@@ -513,7 +513,7 @@ footer ul
        height:80px;
        
     }
-     #grey 
+    #grey 
     {
         color:black;
     }
@@ -574,43 +574,74 @@ footer ul
     }
     #section1
     {
-        height:3000px;
-        width:1200px;
-        margin-bottom: -50px;
+        height:auto;
+        width:100%;
+        margin-bottom: 40px;
         background:none;
         order:2;
         padding:10px 0 ;
     }
-    
+    #section1 a
+    {
+        width: 100%;
+        height:auto;
+        text-decoration: none;
+        
+    }
+    #section1 a:visited
+    {
+        color: black;
+        
+    }
+        
+    #cadrehebergement
+    {
+        margin-top:-5px;
+        height:auto;
+        min-height: 2000px;
+    }
     #cadrehebergement .photo .descriptions
     {
         margin-left:30px;
+        display:flex;
+        flex-direction: column;
+        min-height: 100px;
     }
-    #cadrehebergement .photo h2
+    #cadrehebergement .photo h3
     {
-        font-size:1.8em;
+        font-size:1.2em;
+        margin-bottom: 15px;
+    }
+    #cadrehebergement p
+    {
+        font-size: 1em;
+        margin:0;
     }
     
     #cadrehebergement .photo
     {
         width:98%;
-        height:400px;
+        height: auto !important;
         margin-left:0;
     }
     #cadrehebergement .photo img
     {
-        width: 100%;
+        width: 101%;
+        height:auto;
+    }
+    #section1 h2
+    {
+        padding-left: 16px;
     }
     #section2
     {
         order: 1;
-        width:97%;
-        margin: 0 -15px;
-        padding:10px 17px 0 17px ;
-        border:1px solid#f2f2f2;
-        height:815px;
-        margin-bottom: 20px;
+        width:100%;
+        margin: 0 -19px 20px -19px;
+        padding:10px 15px 0 17px ;
+        height:auto;
         border-radius: 0%;
+        border:#f2f2f2 3px solid;
     }
     #titrepopulaire i
     {
@@ -618,74 +649,100 @@ footer ul
     }
     #cadrepopulaire .photo
     {
-        width:95%;
-        margin: auto;
-        height:213px;
+        height:auto;
+        margin:auto;
         margin-bottom: 20px;
     }
     #cadrepopulaire .photo img
     {
-        width:40%;
-        height:280px;
+        max-width: 60%;
+        height:auto;
+        width:auto;
+        max-height:190px;
     }
     #cadrepopulaire .photo .descriptions
     {
-        width:60%;
+        display:flex;
+        flex-flow: column wrap;
+        width:40%;
+        box-sizing: content-box;
+        height:auto;
     }
-    #cadrepopulaire .photo .descriptions h2
+    #cadrepopulaire .photo .descriptions h3
     {
-        font-size: 1.5em; 
-        line-height:1em;
+        font-size: 1.2em; 
+        line-height:0.8em;
+        margin-bottom: 5px;
+    }
+    #cadrepopulaire p
+    {
+        margin:0;
+        font-size:1.1em;
+        margin-bottom: 5px;
     }
     #section3
     {
  
         width:100%;
-        height:2600px ;
-        margin-bottom: -34px;
-        padding: 0 2.5% 0 2.5%;
+        height:auto ;
+        margin-bottom: 20px;
     }
-
+    #section3 a
+    {
+        width:100% !important;
+        text-decoration: none;
+    }
+    #section3 a:visited
+    {
+        color: black;
+        
+    }
     #cadreactivite
     {
-        height:2500px;
+        width:100%;
+        height:auto;
+        min-height: 1630px;;
         margin-top: 30px;
         flex-direction: column;
     }
-    #section3 h1
+    #section3 h2
     {
-        margin-left: -9px;
+        margin-left: 17px;
+        margin-bottom: 60px;
     }
     #cadreactivite .photo img
     {
-        height: 250px;
-        overflow: hidden;
-
+        height:auto;
+        max-height:none;
+        width:100%;
     }
-    #cadreactivite .photo h2
+    #cadreactivite .photo h3
     {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     #cadreactivite .photo
     {
-        width:95%;
-        height:300px;
-  
+        width:100%;
+        height:auto;
+        margin-bottom: 60px;
     }
-    #cadreactivite .photo:nth-child(3n+1)
+    #cadreactivite a:nth-child(3n+1) .photo
     {
-        height:300px;
+        height:auto;
+        width: 100%;
+        margin-bottom: 60px;
     }
-    #cadreactivite .photo:nth-child(3n+1) img 
+    #cadreactivite a:nth-child(3n+1) img 
     {
-        height: 250px;
+        max-height: auto;
+        height: auto;
     }
     #cadreactivite .photo .descriptions
     {
         height: 60px;
         width:100%;
-        margin:0;
+        margin:0 0 0 10px;
         flex-wrap: wrap;
     }
 
@@ -708,24 +765,82 @@ footer ul
 }
 
 @media only screen
-    and (max-width: 834px)
+    and (max-width: 875px)
 {
     #section1
     {
         width: 100%;
+        height:auto;
+        margin-bottom: 30px;
+    }
+    #cadrehebergement
+    {
+        height:auto;
+        flex-direction: row;
+        min-height: 500px;
+        margin-top: 20px;
+    }
+    #cadrehebergement .photo
+    {
+        width:100%;
+        height:220px;
+        margin-bottom: 15px;
+    }
+    #cadrehebergement .descriptions
+    {
+        min-height: 70px;
     }
     #section2
     {
         width:100%;
         flex-direction: row;
+        height:auto;
+    }
+    #section2 a
+    {
+        height:auto;
+    }
+    #cadrepopulaire .photo
+    {
+        height:auto;
+    }
+    #cadrepopulaire .photo img
+    {
+        height:auto;
+        max-height:240px;
     }
     #section3
     {
-        width:90%;
+        width:100%;
         margin:auto;
+        height:auto;
+    }
+    #section3 a
+    {
+        width:33%;
+    }
+    #cadreactivite .photo
+    {
+        height:auto;
+        margin-bottom: 40px;
+    }
+    #cadreactivite img
+    {
+        height:auto;
+        min-height: 345px;
+    }
+    #cadreactivite a:nth-child(3n+1) img
+    {
+        min-height: 345px;
+    }
+    #cadreactivite
+    {
+        flex-direction: row;
+        height:auto;
     }
     #cadreactivite .photo .descriptions
     {
         font-size: 0.8em;
+        min-height: 30px;
     } 
 }
